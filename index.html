@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ico.png" type="img.png"/>
     <title>Desafio CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +17,25 @@
 </head>
 
 <body>
+    <div class="container">
 <header><p class="p1">PARTICIPE DO WORKSHOP QUE VAI MUDAR O SEU NEGÓCIO</p></header>
-
+</div>
 <main>
     <div class="background1">
         <section class="form1">
-    <p class="p10">GARANTA O SEU LUGAR NO<br/> WORK SHOP DO MAIOR<br/> ESPECIALISTA EM MARKETING DA<br/> ATUALIDADE</p>
+    <p class="p10" id="mb">GARANTA O SEU LUGAR NO WORK SHOP DO MAIOR ESPECIALISTA EM MARKETING DA ATUALIDADE</p>
 
-<p class="p2">Neste evento, você vai<br/> aprender todos os segredos<br/> que vão te fazer ser um<br/> empreendedor de sucesso sem<br/> precisar contar com a sorte.
+<p class="p2" id="mb">Neste evento, você vai aprender todos os segredos<br/> que vão te fazer ser um empreendedor de sucesso sem precisar contar com a sorte.
 
 <form>
-    <input class="name1" type="text" value="name"/>
-    <input type="text" value="email"/>
-
+    <input class="name1" type="text" placeholder="Nome"/>
+    <input type="text" placeholder="Email"/>
+    <select name="place">
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+    </select>
+    <input class="botao1" type="submit" value="Inscreva-se Já"/>
 </form>
 </p>
         </section>
@@ -39,12 +46,14 @@
     <br/>
     <div class="div6">
         <img src="./face.jpg"/>
+        
 <p class="p4">O Palestrante</p>
-
+<br/>
 <p class="p5">Carlos Fontana é conhecido por dar palestras<br/> que abalam a estrutura do marketing tradicional.<br/>
 Prepara-se para sair do evento com uma nova<br/> visão do que é possivel ser feito para o seu<br/> negócio decolar <br/></p>
 
 <p class="p6">Formado em Marketing pela universidade XYZ<br/> e fundador da MarkUp, a empresa vencedora<br/> dos últimos 5 Premio MarketingBr.</p>
+<br/><br/><br/><br/>
 </div>
 </section>
 </body>
