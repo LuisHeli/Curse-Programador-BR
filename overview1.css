@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topbarsec {
+    padding: 1.5vh;
+    padding-bottom: 0;
+    background-color: #333;
+}
+
+.topbar {
+    padding-bottom: 2vh;
+    font-size: 4vh;
+    display: flex;
+    color: white;
+    margin-left: 80vh;
+}
+.line-topbar-1 {
+    height: 1.3vh;
+    background-color: #fd8a24;
+    margin-left: -1.55vh;
+    margin-right: -1.55vh;
+}
+.content1 {
+    padding-top: 7vh;
+    width: 130vh;
+    margin-left: 45vh;
+}
+
+
+.contenttext {
+    font-size: 7.4vh;
+    padding-bottom: 5vh;
+}
+.texth21 {
+    color: #555;
+    font-weight: 400;
+}
+.content3 {
+    padding-top: 4vh;
+}
+.texth31 {
+    color: #333;
+    font-size: 2vh;
+}
+.text-content-h4 {
+    color: #333;
+    font-size: 1.4vh;
+    font-weight: 200;
+    padding-top: 1.4vh;
+}
+.div-img.content-1 {
+    
+}
+.img-content-1 {
+    margin-top: 5vh;
+    padding-left: 0vh;
+    padding-right: 3vh;
+}
+.line-content-1 {
+    margin-top: 4vh;
+}
+
+.main-content-2 {
+    padding-top: 5vh;
+}
+.text-content-section-2 {
+    color: #555;
+    font-weight: 400;
+    font-size: 3vh;
+}
+.div-main-content-2 {
+    width: 100vh;
+    margin-left: 15vh;
+}
+.text-content-section-2-h4 {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    font-size: 3vh;
+}
+a {
+    text-decoration: none;
+    color: #fd8a24;
+    font-size: 3vh;
+}
+.img-content-section-2 {
+    width: 100vh;
+    margin-left: 15vh;
+}
+.text-content-h2-1 {
+    padding-top: 3vh;
+    font-size: 2vh;
+    font-weight: 300;
+    margin-left: 15vh;
+}
+.text-content-h4-2 {
+    font-size: 3vh;
+}
+.div-content-5 {
+    width: 100vh;
+    margin-left: 15vh;
+    padding-top: 7vh;
+    color: #555;
+    font-weight: 400;
+}
+.text-content-h1-1 {
+    font-size: 5vh;
+    margin-left: 1vh;
+    padding-bottom: 3vh;
+}
+.img-content-section3 {
+    width: 100vh;
+}
+.text-content-h2-2 {
+    padding-top: 3vh;
+    font-size: 2vh;
+    font-weight: 300;
+    padding-bottom: 8vh;
+}
+.footer-1{
+    height: 15vh;
+    background-color: #333;
+    color: white;
+}
+h7 {
+    font-size: 2vh;
+}
+.a-footer {
+    color: white;
+    font-size: 2vh;
+}
+.div-footer-1 {
+    padding: 5vh;
+    margin-left: 70vh;
+}
