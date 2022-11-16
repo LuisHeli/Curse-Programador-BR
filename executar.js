@@ -19,4 +19,4 @@ var aluno1 = turma[1]
 
 turma.forEach(function(elemento) {
     console.log(aluno)
-}) 
+})
