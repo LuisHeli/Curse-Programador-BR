@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script>
+        function change(b) {
+            var a = document.getElementById("te")
+            a.innerText = b.value
+        }
+
+    </script>
+
     <style>
         .para {
             color: aqua;
@@ -15,7 +23,9 @@
 </head>
 <body>
     
-    <h1 onclick="this.style.color = 'red'" id="text">titulo</h1>
+    <h1 id="te" class="ta">titulo</h1>
+    <input id="inpute" type="text" oninput="change(this)">
+
     <p class="para" id="cor">textotextotexto textotexto</p>
     <p class="para">textotexto textotextotexto</p>
     <script src="executar.js"></script>
