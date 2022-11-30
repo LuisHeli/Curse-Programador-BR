@@ -7,9 +7,38 @@
     <title>Document</title>
 
     <script>
-        function change(b) {
-            var a = document.getElementById("te")
-            a.innerText = b.value
+      function h1change(inpute) {
+        var a = document.getElementById("te")
+        a.innerText = inpute.value
+      }
+
+        function click1() {
+            var h1 = document.getElementById("te")
+            h1.style.display = "none"
+        }
+        
+        function muda(a){
+            a.style.backgroundColor = "red"
+            console.log("deu ?")
+        }
+
+        function muda1(a){
+            a.style.backgroundColor = "aqua"
+            console.log("deu ?")
+        }   
+
+        function loader() {
+            var a = document.getElementById("ta")
+            a.addEventListener("mouseover", mudar12)
+            a.addEventListener("mouseout", mudar14)
+        }
+        function mudar12() {
+            var a = document.getElementById("ta")
+            a.innerText = "DEU CERTO"
+        }
+        function mudar14() {
+            var a = document.getElementById("ta")
+            a.innerText = "volto"
         }
 
     </script>
@@ -19,12 +48,24 @@
             color: aqua;
         }
 
+        .div1 {
+            padding: 3vw;
+            display: flex;
+            width: 5vw;
+            height: 5vw;
+            background-color: rgba(0, 217, 255, 0.423);
+        }
+        #ta {
+            display: inline-block;
+        }
+
     </style>
 </head>
-<body>
-    
-    <h1 id="te" class="ta">titulo</h1>
-    <input id="inpute" type="text" oninput="change(this)">
+<body onload="loader()">
+    <h1 id="ta">TESTE</h1>
+    <h1 id="te" class="ta" onclick="this.style.color = 'red'">titulo</h1>
+  <input oninput="h1change(this)">
+    <div class="div1" onclick="click1()" onmouseover="muda(this)" onmouseout="muda1(this)">Click</div>
 
     <p class="para" id="cor">textotextotexto textotexto</p>
     <p class="para">textotexto textotextotexto</p>
