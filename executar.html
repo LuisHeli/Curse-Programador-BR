@@ -27,7 +27,7 @@
             console.log("deu ?")
         }   
 
-        function loader() {
+        window.onload =  function() {
             var a = document.getElementById("ta")
             a.addEventListener("mouseover", mudar12)
             a.addEventListener("mouseout", mudar14)
@@ -40,6 +40,23 @@
             var a = document.getElementById("ta")
             a.innerText = "volto"
         }
+
+       window.onload = function() {
+          console.log(document.body.children[7].children[0].parentElement)
+          var h1 = document.getElementsByTagName("h1")
+
+          for(var h of h1) {
+            console.log(h)
+          }
+
+          addEventListener("click", qop)
+        
+        }
+
+        function qop(e) {
+            var b = e.target
+            console.log(b.parentElement)
+          }
 
     </script>
 
@@ -61,7 +78,7 @@
 
     </style>
 </head>
-<body onload="loader()">
+<body>
     <h1 id="ta">TESTE</h1>
     <h1 id="te" class="ta" onclick="this.style.color = 'red'">titulo</h1>
   <input oninput="h1change(this)">
@@ -70,6 +87,11 @@
     <p class="para" id="cor">textotextotexto textotexto</p>
     <p class="para">textotexto textotextotexto</p>
     <script src="executar.js"></script>
+
+    <div id="d1">
+        <h1 id="h4">OUTRA COISA</h1>
+        <p>Outra coisa de novo</p>
+    </div>
 
 </body>
 </html>
