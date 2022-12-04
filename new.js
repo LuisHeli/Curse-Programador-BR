@@ -1,15 +1,8 @@
-var lista = document.getElementById("lista")
-lista.dataset.num = "5"
-var num = parseInt(lista.dataset.num)
+var tela = document.getElementById("tela")
+var ctx = tela.getContext("2d")
 
-var conteudo = ""
-
-for(var i = 0; i < num; i++) {
-    conteudo += "<li>" + i + "<li>"
-}
-
-lista.innerHTML = conteudo
-console.log(conteudo)
-
-var id = parseInt(lista.dataset.id)
-console.log(id)
+ctx.moveTo(0,0)
+ctx.lineTo(100,100)
+ctx.lineWidth = 2
+ctx.strokeStyle="red"
+ctx.stroke()
