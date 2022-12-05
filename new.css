@@ -1,3 +1,26 @@
-p::first-letter {
-    font-size: 5vw;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.container {
+    background-color: blue;
+    width: 100%;
+  
+}
+
+.primeira {
+    display: inline-block;
+    background-color: yellow;
+    width: calc(100% - 304px);
+    height: 300px;
+    margin-right: -4px;
+}
+
+.segunda {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
 }
