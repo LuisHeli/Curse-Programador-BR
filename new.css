@@ -16,3 +16,11 @@ p{
     width: 60vw;
     height: 30vw;
 }
+
+
+div {
+    display: flex;
+flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
