@@ -1,26 +1,23 @@
-:root {
-    --var: 15px
+
+.container {
+    color: white;
+    background-color: gray;
+    padding: 10px;
+
+    display: grid;
+    grid-template: auto auto / 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-p{
-    font-size: var(--var);
-}
-
-.d1 {
-    display: flex;
-}
-.h1 {
-    margin: auto;
-    font-size: 20vw;
+.react1 {
     background-color: red;
-    width: 60vw;
-    height: 30vw;
+    border: 3px solid black;
 }
-
-
-div {
-    display: flex;
-flex-wrap: wrap;
-    justify-content: flex-start;
-
+.react2{
+    background-color: blue;
+    border: 3px solid black;
+}
+.react3{
+    background-color: green;
+    border: 3px solid black;
 }
