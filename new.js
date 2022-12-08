@@ -1,8 +1,31 @@
-var tela = document.getElementById("tela")
-var ctx = tela.getContext("2d")
+var usuarios = ["Pedro", "Carlos", "Joao"];
 
-ctx.moveTo(0,0)
-ctx.lineTo(100,100)
-ctx.lineWidth = 2
-ctx.strokeStyle="red"
-ctx.stroke()
+function inserirUsuario(nome) {
+
+    var promise = new Promise(function(resolve, reject) {
+       setTimeout(() => {
+        usuarios.push(nome);
+
+        var error = false;
+
+        if(!error) {
+            resolve();
+        }
+        else{
+            reject("ERROR")
+        }
+        }, 1000)
+    })
+    return promise
+}
+
+
+function listarUsuarios() {
+    console.log(usuarios)
+}
+
+async function executar() {
+    await inserirUsuario("Leo")
+    listarUsuarios()
+}
+executar();
